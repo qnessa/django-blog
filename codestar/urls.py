@@ -20,7 +20,6 @@ from blog.views import my_blog
 
 
 urlpatterns = [
-    path('', my_blog, name='home'),  # Handle the root path
     path('blog/', my_blog, name='blog'),
     path('admin/', admin.site.urls),
 ]
