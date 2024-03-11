@@ -29,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-$+=z8^&&_d9lgk*6zw-8zp_)70x4^bjyyc234b*9i-8onb07my'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["8000-qnessa-djangoblog-dwv7s1cijcu.ws-eu108.gitpod.io", ".herokuapp.com"]
 
@@ -87,6 +87,13 @@ DATABASES = {
        'NAME': BASE_DIR / 'db.sqlite3',       
   }
 }
+
+
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.codeanyapp.com",
+    "https://*.herokuapp.com"
+]
 
 
 # Password validation
