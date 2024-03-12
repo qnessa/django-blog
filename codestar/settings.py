@@ -90,10 +90,8 @@ DATABASES = {
 
 
 
-CSRF_TRUSTED_ORIGINS = [
-    "https://*.codeanyapp.com",
-    "https://*.herokuapp.com"
-]
+CSRF_TRUSTED_ORIGINS = ['https://8000-qnessa-djangoblog-dwv7s1cijcu.ws-eu108.gitpod.io']
+
 
 
 # Password validation
